@@ -1,0 +1,37 @@
+{
+    "url": " http://localhost:8704/tmf-api/testCase/v4/",
+    "resourcesToTest": "NonFunctionalTestModel",
+    "headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+    },
+    "payloads": {
+        "NonFunctionalTestModel": {
+            "POST": {
+                "payload": {
+                    "description": "my NonFunctionalTestModel",
+                    "version": "1.2.3",
+                    "nonFunctionalTestModelDefinition": {}
+                }
+            }
+        },
+        "TestCase": {
+            "POST": {
+                "payload": {
+                    "description": "my TestCase",
+                    "version": "1.2.3",
+                    "testCaseDefinition": {}
+                }
+            }
+        },
+        "TestSuite": {
+            "POST": {
+                "payload": {
+                    "description": "my Test Suite",
+                    "version": "1.2.3",
+                    "testSuiteDefinition": {}
+                }
+            }
+        }
+    }
+}
